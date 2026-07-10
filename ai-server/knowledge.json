@@ -1,0 +1,362 @@
+[
+  {
+    "category": "General FAQ",
+    "question": "What is Swiggy Customer Care Number?",
+    "answer": "We value our customer's time and hence moved away from a single customer care number to a comprehensive chat-based support system for quick and easy resolution. You no longer have to go through the maze of an IVRS call support. Just search for your issue in the help section on this page and initiate a chat with us. A customer care executive will be assigned to you shortly."
+  },
+  {
+    "category": "General FAQ",
+    "question": "I entered the wrong CVV, why did my transaction still go through?",
+    "answer": "The logic of validations of CVV resides with either payment gateways or banks. It is absolutely the choice of banks to have CVV as a mandatory input field or not. As per RBI guidelines, 2-Factor-Authentication is not mandatory for less than Rs 2000 rupees transaction. It is not in control of Swiggy. As an organization, we don't store any card information."
+  },
+  {
+    "category": "General FAQ",
+    "question": "I want to explore career opportunities with Swiggy",
+    "answer": "JOIN OUR TEAM\nSEND AN EMAIL\nWe will revert within 24 hrs"
+  },
+  {
+    "category": "General FAQ",
+    "question": "Can I edit my order?",
+    "answer": "In order to edit your order, please click on \"Help\" and then \"I wantto modify items in my order\". We will connect you to a support agent who will assist you with the same. Please note that your order can be edited only if the restaurant is yet to confirm your order. Post that, we may not be able to modify your order if food preparation has started."
+  },
+  {
+    "category": "General FAQ",
+    "question": "I want to cancel my order",
+    "answer": "In order to cancel your order, please click on \"Help\" and then \"I want to cancel my order\". Please note that we may charge you a cancellation fee as it helps us to minimise food wastage and also compensate our restaurant partners for cancelled orders."
+  },
+  {
+    "category": "General FAQ",
+    "question": "I want an invoice for my order",
+    "answer": "SEND AN EMAIL\nWe will revert within 24 hrs"
+  },
+  {
+    "category": "General FAQ",
+    "question": "Will Swiggy be accountable for quality/quantity?",
+    "answer": "Quantity and quality of the food is the restaurants' responsibility. However in case of issues with the quality or quantity, kindly submit your feedback and we will pass it on to the restaurant."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Is there a minimum order value?",
+    "answer": "We have no minimum order value and you can order for any amount."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Do you charge for delivery?",
+    "answer": "Delivery fee varies from city to city and is applicable if order value is below a certain amount. Additionally, certain restaurants might have fixed delivery fees. Delivery fee (if any) is specified on the 'Review Order' page."
+  },
+  {
+    "category": "General FAQ",
+    "question": "How long do you take to deliver?",
+    "answer": "Standard delivery times vary by the location selected and prevailing conditions. Once you select your location, an estimated delivery time is mentioned for each restaurant."
+  },
+  {
+    "category": "General FAQ",
+    "question": "What are your delivery hours?",
+    "answer": "Our delivery hours vary for different locations and depends on availability of supply from restaurant partners."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Can I order from any location?",
+    "answer": "We will deliver from any restaurant listed on the search results for your location. We recommend enabling your GPS location finder and letting the app auto-detect your location."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Is single order from many restaurants possible?",
+    "answer": "We currently do not support this functionality. However, you can place orders for individual items from different restaurants."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Do you support bulk orders?",
+    "answer": "In order to provide all customers with a great selection and to ensure on time delivery of your meal, we reserve the right to limit the quantities depending on supply."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Can I order in advance?",
+    "answer": "Yes, you can order up to 2 days in advance on our platform. Click onthe \"NOW\" button on the top left corner of the app to select your desired delivery time slot and place an order. This feature is currently available only on Android phones and in select cities."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Can I change the address / number?",
+    "answer": "Any major change in delivery address is not possible after you have placed an order with us. However, slight modifications like changing the flat number, street name, landmark etc. are allowed. If you have received delivery executive details, you can directly call him, else you could contact our customer service team."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Unable to view the details in my profile",
+    "answer": "Please check if your app is due for an update. If not, please share the details via support@swiggy.in"
+  },
+  {
+    "category": "General FAQ",
+    "question": "Did not receive referral coupon?",
+    "answer": "Referral coupon is given upon the first successful transaction of the referred person. If you still have not received it, kindly send us your details at support@swiggy.in. We will contact you within 48 hours."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Deactivate my account",
+    "answer": "Please write to us at support@swiggy.in in the event that you want to deactivate your account."
+  },
+  {
+    "category": "General FAQ",
+    "question": "Do you accept Sodexo, Ticket Restaurant etc.?",
+    "answer": "We do not accept Sodexo vouchers but we do accept Sodexo card. You can select the Sodexo card option while selecting payment options at the time of order"
+  },
+  {
+    "category": "General FAQ",
+    "question": "Unable to make payment using Sodexo card on Instamart?",
+    "answer": "Sodexo card can be used to pay for purchase of food and non-alcoholic beverages (for example, fruits, vegetables, biscuits, milk and other grocery items). Sodexo card cannot be used to buy non-food items (for example Stationary items, shampoo, batteries etc)"
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "What are Deal Vouchers?",
+    "answer": "Deal Vouchers are pre-paid vouchers for specific dishes or dish combos at partner restaurants. You buy them on Swiggy Dineout and redeem them at the restaurant for the corresponding dish at no extra cost."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Need help with your Dineout Deal Vouchers?",
+    "answer": "Please use one of the below options to get support from us.\nCHAT WITH US\nWait time under 2 mins"
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Where can I find Deal Vouchers?",
+    "answer": "You can discover Deal Vouchers via the Steal Store entry point on the Swiggy Dineout Home Page, which takes you to a dedicated store experience with deal listings and brand collections."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Can I use Deal Vouchers for dine-in or",
+    "answer": "Deal Vouchers are currently only for dine-in."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Do I need to book a table to use Deal Vouchers?",
+    "answer": "No. Table booking is not required to redeem Deal Vouchers."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Do I need to pay my bill on Swiggy Dineout to redeem?",
+    "answer": "No. You can redeem Deal Vouchers directly at the restaurant. Swiggy Pay Bill is not required."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "How does it work end-to-end?",
+    "answer": "Discover a deal in Steal Store -> Buy voucher(s) -> Visit restaurant within the validity period -> Redeem voucher(s) at the outlet -> Enjoy the dish(es) at no extra cost (for the voucher items)."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "What do I get after purchasing a Deal Voucher?",
+    "answer": "Depending on the brand, you'll receive either a QR + voucher code, or a QR linked to your phone number."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Where can I see my purchased vouchers?",
+    "answer": "In the My Vouchers section inside the Steal Store page. If you have active vouchers, you may also see a shortcut on the Dineout Home Page."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "How do I redeem my Deal Voucher at the restaurant?",
+    "answer": "There are two supported redemption flows depending on the restaurant/brand:\nPartner Dashboard (Phone Number / QR based): Staff scans/enters phone number/QR, checks active vouchers, marks redeemed, and manually adds the item in POS.\nPOS-based Voucher Code / QR: Staff enters/scans the voucher code or QR into the POS."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Can I redeem multiple vouchers together?",
+    "answer": "Yes. You can buy multiple Deal Vouchers in a single order and redeem them in one visit."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Can I redeem a voucher partially?",
+    "answer": "No. Each Deal Voucher maps to a specific dish SKU, so it must be redeemed as-is."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Can I use the same voucher multiple times",
+    "answer": "No. Deal Vouchers are single-use only."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Can I combine Deal Vouchers with restaurant discounts or Dineout offers?",
+    "answer": "No. Deal Vouchers cannot be combined with Dineout offers or restaurant discounts in Milestone 1."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Are Deal Vouchers available across all cities?",
+    "answer": "Not always. Deal Vouchers may be available only in select cities. Eligible outlets are communicated in the Terms & Conditions for each voucher."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Can I redeem the voucher at any outlet of the brand?",
+    "answer": "Only at eligible outlets shown in voucher Terms & Conditions. If a brand has multiple eligible outlets, you can redeem at any eligible outlet."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "What if the restaurant I visited is not eligible?",
+    "answer": "You will be directed to eligible outlets. Refund requests will not be accepted in this case."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "What if the restaurant is out of stock for the dish?",
+    "answer": "You can redeem at another eligible outlet of the same brand (if available)."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Are there time/day restrictions?",
+    "answer": "In Milestone 1, day/hour restrictions are generally not applicable. Some brands may add restrictions in Terms & Conditions."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "How many vouchers can I purchase?",
+    "answer": "There may be limits per user during the campaign period, which will be communicated in voucher details or Terms & Conditions."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Can I cancel my Deal Voucher?",
+    "answer": "No. Cancellation is not allowed after purchase."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "Is a refund allowed?",
+    "answer": "No refund is allowed after purchase. Refunds are only supported if the restaurant denies redemption/service for a valid voucher."
+  },
+  {
+    "category": "Dineout Steal Deal",
+    "question": "How will I receive the refund?",
+    "answer": "Refund (if applicable) will be reversed to your original payment source within 7-10 days."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "I want to cancel the membership",
+    "answer": "Sorry the membership didn't meet your expectations. Instead of cancelling, you can still continue enjoying your benefits - but if you'd still like to go ahead, our customer support team will help you with the cancellation and process a refund for the remaining period, if eligible."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Is there a limit on the number of devices I can use Swiggy One on?",
+    "answer": "Yes. Swiggy One membership can be used only on 2 devices at a time from 8th Feb onwards. Swiggy One memberships are priced for individual and personal usage. Having a 2 device limit helps us curb disproportionate usage of benefits and ensures the sustainability of the pricing we offer to all our consumers."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Is there a minimum bill value to avail Swiggy One Pre-Book offers on Dineout?",
+    "answer": "No there is no minimum bill value required to avail Swiggy One Pre-Book offers on Dineout pre-book restaurants."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Is there a limit on free deliveries or extra discounts?",
+    "answer": "With Swiggy One, you enjoy unlimited free deliveries on food orders and Instamart orders. Additionally, you can avail pre-book deals at select Dineout restaurants. Plus, you receive extra discounts on food delivery, on top of other regular offers."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Can I club Swiggy One extra discount with other offers? Is there an upper limit?",
+    "answer": "As a Swiggy One member, you have exclusive access to member only extra discouts of up to 30% on select food delivery restaurants."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Is Swiggy One available in all cities ?",
+    "answer": "Currently Swiggy One is available in select cities only."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Is there a minimum order value to avail extra discount?",
+    "answer": "Extra discounts with Swiggy One are auto-applied when you meet the minimum order value criteria of the restaurant. The minimum order value of each restaurant may vary from one restaurant to another. Please note that extra discounts are flat discounts with no upper limit which are exclusively available only for One members."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Can I cancel, pause or transfer my membership?",
+    "answer": "Currently, there is no means of cancelling/pausing/transferring your Swiggy One membership. We are working on this and will ensure we are able to serve you better in the near future."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "On which platforms can I use my Swiggy One benefits?",
+    "answer": "Swiggy One benefits can be availed when ordering through Android, iOS and mobile web but not on desktop."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Is Instamart available in all locations ?",
+    "answer": "Instamart is available in select location, we are rolling it out to more locations soon. You enjoy free delivery above INR 199 in all active Instamart locations."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "What is the Swiggy One Pre Book offers on Dineout?",
+    "answer": "Swiggy One members get exclusive access to pre-book offers which gives up to 50% off on Dineout. Members can pre-book deal on any pre-book eligible restaurants and avail them via Swiggy Dineout."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "How can I avail Swiggy One Pre-book offers on Dineout?",
+    "answer": "Pre-book offers are exclusively available for Swiggy One or One Lite members. Members can open Swiggy app, tap on Swiggy Dineout, pre-book deal on any pre-book eligible restaurants. On the day of deal redemption, avail pay via Swiggy Dineout to avail the offer."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "What are One Privileges?",
+    "answer": "'One Privileges' is a new proposition for Swiggy One members, offering a variety of high-quality, time-limited offers from Swiggy and third-party brands. These offers are intended to enhance the overall membership value by providing members with additional benefits."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Which users will have access to One Privileges, and how many privileges are offered per user?",
+    "answer": "All Swiggy One members will have access to One Privileges at any given time. These privileges are mostly third-party offers, and the specific offers might vary among users depending on partner discretion."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "How can members access and redeem their One Privileges?",
+    "answer": "Members can access their privileges through the dedicated 'Privileges' section on the Swiggy One membership pages within the Swiggy app. To redeem an offer, members can unlock their unique code in the 'One Privileges' page which can be accessed by clicking on \"View All\" on the Privileges section on the One pages. They can then redirect to partner apps to redeem the benefits."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "What is the validity of the offers available under One Privileges?",
+    "answer": "Each offer comes with a unique coupon code valid until the offer's expiry date. However, if your One Membership expires, you will no longer be able to access the code on the Swiggy App. To do that, you will have to renew your One Membership."
+  },
+  {
+    "category": "Swiggy One FAQ",
+    "question": "Is there a minimum order value above which the surge fee is waived?",
+    "answer": "Surge fee is waived for orders above Rs 399. However, please note that this benefit may be temporarily paused during periods of exceptionally high demand, such as: heavy rains, peak hours, key events or major sales."
+  },
+  {
+    "category": "General",
+    "question": "What is Swiggy Customer Care Number?",
+    "answer": "We value our customer's time and hence moved away from a single customer care number to a comprehensive chat-based support system for quick and easy resolution. You no longer have to go through the maze of an IVRS call support. Just search for your issue in the help section on this page and initiate a chat with us. A customer care executive will be assigned to you shortly."
+  },
+  {
+    "category": "General",
+    "question": "I am unable to find the restaurant I'm looking for",
+    "answer": "The restaurant might either be closed at the moment or temporarily not serviceable due to the low rider availability near the restaurant. Please try again after some time or consider ordering from a different restauraunt."
+  },
+  {
+    "category": "General",
+    "question": "I see surge fees on app",
+    "answer": "Non-Swiggy one customer: Surge fee is generally enabled temporarily due to higher than expected demand to help us to fairly compensate the delivery executive. Explore our Swiggy one feature which eliminates surge fee along with other benefits. If you have any questions please feel free to drop a note at 'support@swiggy.in'"
+  },
+  {
+    "category": "General",
+    "question": "I am unable to place a cash on delivery order",
+    "answer": "COD option may not be available due to below reasons:\n 1. High value order\n 2. If order is placed from a desktop application\n 3. Any recent history of cancelling a COD order\n 4. New or inactive accounts\nTo enable COD in the future, consider placing a few prepaid orders. Meanwhile, you can choose from our secure and convenient payment options."
+  },
+  {
+    "category": "General",
+    "question": "I did not receive my OTP on SMS",
+    "answer": "If you're not receiving the OTP, it's usually due to a network issue. Please check your mobile network settings and try generating a new OTP. If the problem persists, you might want to restart your device or reach out to us at support@swiggy.in for assistance."
+  },
+  {
+    "category": "General",
+    "question": "I have a coupon related query for non food issues",
+    "answer": "I am unable to find my coupon: You can view available coupons for your order, by going to the 'APPLY COUPON' section on the cart page while placing your order.\nI am unable to apply my coupon: Please check if you have adhered to all the coupon's terms and conditions. Choose your coupon in the 'APPLY COUPON' section and click '+MORE' to review all T&Cs to avail the benefits\nI forgot to apply my coupon: It looks like you missed applying your coupon. No worries, though! Your coupon is still valid and waiting for you. Simply apply it to your next order and enjoy the savings. We appreciate your understanding and look forward to serving you again soon!"
+  },
+  {
+    "category": "General",
+    "question": "My payment was deducted but the order was not processed",
+    "answer": "If your payment has been deducted, it will be refunded to the source account\n 1. UPI (2 hours)\n 2. Credit Card (4-7 days)\n 3. Debit Card (4-7 days)\n 4. Net Banking (4-7 days)\n   In case you have not received the refund within the above timelines please reach out to us at support@swiggy.in"
+  },
+  {
+    "category": "General",
+    "question": "I want to unsubscribe from Swiggy communications",
+    "answer": "Please drop us an email mentioning the channels you would like to be unsubscribed from. We will take an action and confirm within 24-48 hours"
+  },
+  {
+    "category": "General",
+    "question": "Why was I charged a cancellation fee?",
+    "answer": "A cancellation fee applies if you request to cancel your order after placing it. For more details about your specific order, go to the Profile section in the app, select the relevant order, then click on Help, and choose I have a payment and billing-related query. Our support team will be happy to assist you further."
+  },
+  {
+    "category": "General",
+    "question": "I have a query/issue regarding the bill amount",
+    "answer": "Kindly send us an email at support@swiggy.in with the following information:\n * Attach a screenshot of the bill, indicating the issue\n * Include the Order ID (if applicable)\n * Specify the item price and any extra charges\n * Provide a description of the problem you're encountering"
+  },
+  {
+    "category": "General",
+    "question": "I want an invoice for my order",
+    "answer": "To receive the order invoice via email, follow these steps:\n * Navigate to \"\"My Account\"\" and then select the order for which you need an invoice\n * Click on \"\"HELP\"\" and choose \"\"I have payment and bill related queries for this order\"\" and then select \"\"I want an invoice for this order\"\" to initiate the request\n * You'll receive the invoice within 24 hours on your registered email address"
+  }
+]

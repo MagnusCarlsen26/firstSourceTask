@@ -1,0 +1,9 @@
+# Todo
+
+## ai-server
+- [ ] Logging of AI calls including cost.
+- [ ] Make model section and tempature and other things configurable. 
+- [ ] Tests.
+- [ ] Stronger type definations.
+- [ ] Handle exceptions gracefully
+- [ ] Validate JSON responses from LLM
