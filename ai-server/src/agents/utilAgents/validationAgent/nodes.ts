@@ -6,9 +6,9 @@ import { SYSTEM_PROMPT } from "./prompt.js";
 import { VerdictZod, Verdict } from "./schema.js";
 
 export async function gatherEvidence(
-  state: Pick<MainState, "complaint">,
+  state: Pick<MainState, "resolution">,
 ): Promise<Partial<MainState>> {
-  const validation = state.complaint.validation!;
+  const validation = state.resolution.validation!;
   const { faq, userInfo } = validation;
 
   const [faqResult, userInfoResult] = await Promise.all([
@@ -19,7 +19,7 @@ export async function gatherEvidence(
   ]);
 
   return {
-    complaint: {
+    resolution: {
       validation: {
         ...validation,
         ...(faq && { faq: { ...faq, result: faqResult } }),
@@ -30,9 +30,9 @@ export async function gatherEvidence(
 }
 
 export async function decideVerdict(
-  state: Pick<MainState, "complaint" | "util">,
+  state: Pick<MainState, "resolution" | "util">,
 ): Promise<Partial<MainState>> {
-  const validation = state.complaint.validation!;
+  const validation = state.resolution.validation!;
   const { request, faq, userInfo } = validation;
 
   const evidence = [
@@ -52,7 +52,7 @@ export async function decideVerdict(
   ]);
 
   return {
-    complaint: { validation: { ...validation, verdict } },
+    resolution: { validation: { ...validation, verdict } },
     util: { ...state.util, nextMessage: composeVerdictMessage(verdict) },
   };
 }

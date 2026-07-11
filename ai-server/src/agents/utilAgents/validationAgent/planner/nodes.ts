@@ -16,7 +16,7 @@ export async function planValidation(
   ]);
 
   return {
-    complaint: {
+    resolution: {
       validation: {
         request,
         faq: { needed: plan.faq.needed, request: plan.faq.request },
