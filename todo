@@ -9,3 +9,4 @@
 - [x] Validate JSON responses from LLM
 - [ ] At the end keep taking input from user.
 - [ ] Give full context to to agents. currently only giving last message.
+- [ ] Move all the message templates to a folder.

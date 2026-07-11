@@ -13,3 +13,14 @@ export function getLastUserMessage(chatHistory: ChatHistory): string {
 
   return lastMessage.message;
 }
+
+export function findLastUserMessage(chatHistory: ChatHistory): string {
+  for (let i = chatHistory.length - 1; i >= 0; i--) {
+    const entry = chatHistory[i];
+    if (entry?.author === "user") {
+      return entry.message;
+    }
+  }
+
+  throw new Error("No user message found in chat history");
+}
