@@ -6,6 +6,27 @@ gathers the facts it needs, decides what it is allowed to do, and either
 resolves the issue or hands it to a human — while streaming every decision it
 makes to a live dashboard so you can watch it think.
 
+## Setup
+
+Prerequisites: [Node.js](https://nodejs.org) 20 or newer, [pnpm](https://pnpm.io),
+and an OpenAI API key.
+
+```bash
+cd ai-server
+pnpm install                       # install dependencies
+cp .env.example .env               # then open .env and add your OPENAI_API_KEY
+```
+
+Then run one of:
+
+```bash
+pnpm web        # start the web chat + live dashboard at http://localhost:3000
+pnpm dev        # run the assistant from the command line
+```
+
+The first run builds a small search index from the FAQ data and caches it to
+disk, so give it a moment to start.
+
 ## How it works
 
 Every message flows through one shared pipeline:
