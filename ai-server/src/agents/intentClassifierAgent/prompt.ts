@@ -82,6 +82,62 @@ Examples:
 6. When no dissatisfaction is present, decide QUERY vs SERVICE_REQUEST by the customer's end state: if the information is the destination — knowing is all they want — it is a **QUERY**; if the information is a means toward changing something, or the message directly asks to change something, it is a **SERVICE_REQUEST**. A question that is a preliminary step toward a change (e.g. asking whether an action is possible or permitted) is a **SERVICE_REQUEST**, even though it is phrased as a question.
 7. Always return exactly one category.
 
+## Urgency
+
+Independently of the category, assign an **urgency level** that reflects how much the customer is harmed by a delayed response. Urgency is driven by three things: **safety/health risk**, **money or an outcome at active risk**, and **time-sensitivity** (whether waiting makes the situation worse or irreversible). It is **not** about the customer's tone — an angry message about an old, settled issue is not urgent, and a calm message about an active emergency is.
+
+Return exactly one of: **LOW**, **MEDIUM**, **HIGH**.
+
+### HIGH
+
+There is a safety/health risk, or something is actively going wrong **right now** where every minute of delay makes it worse or impossible to fix. Acting late causes real, often irreversible harm.
+
+Signals: food safety (allergen served, foreign object, spoiled food, illness), an order that must be stopped/changed **before** it is prepared or dispatched, money charged with no order placed, a delivery going to the wrong place while it is happening, a courier at the door with a problem, being locked out of an account mid-transaction.
+
+Examples:
+
+* There's a piece of glass in my biryani.
+* I'm allergic to peanuts and the dish clearly has them — I already took a bite.
+* Cancel my order now, the restaurant hasn't started cooking yet.
+* I was charged twice but no order shows up.
+* The driver is delivering my food to the wrong building right now.
+
+### MEDIUM
+
+A concrete, specific problem or request tied to a recent order that should be handled promptly, but nothing is actively getting worse and there is no safety risk. The harm has already happened and is bounded, or the request has a near-term deadline.
+
+Signals: a completed order that arrived cold/late/wrong, a missing item, a refund or replacement for an issue that already occurred, changing the address or time for an **upcoming** delivery, "can I still cancel" for an order not yet acted on.
+
+Examples:
+
+* My food arrived cold and an item was missing, I'd like a refund.
+* The delivery was 40 minutes late.
+* Please change the delivery address for my order arriving this evening.
+* Am I eligible for a refund for yesterday's order?
+* Reschedule my delivery to tomorrow.
+
+### LOW
+
+General, informational, or non-time-sensitive. There is no active problem, no money at risk, and no deadline — waiting hours or days changes nothing for the customer.
+
+Signals: policy/how-to questions, membership or feature information, general feedback or curiosity, anything not tied to a specific problem or deadline.
+
+Examples:
+
+* What is your cancellation policy?
+* What is Swiggy One membership?
+* How do coupons work?
+* Do you deliver to my area?
+* Just wanted to say the app looks nice.
+
+### Urgency Rules
+
+1. Judge urgency by **consequence of delay**, not by tone, profanity, or emotion.
+2. If there is any **health or safety** risk, urgency is **HIGH**.
+3. If something is **in progress** and can still be affected (an order not yet prepared/dispatched, money in limbo, a delivery happening now), urgency is **HIGH**.
+4. A problem that has **already finished happening** and is bounded (cold food, a past late delivery, a missing item) is **MEDIUM**, even if the customer is very upset.
+5. Purely informational messages with no problem, no money at risk, and no deadline are **LOW**.
+
 ## Confidence level decision
 
 ## Confidence Guidelines

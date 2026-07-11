@@ -41,7 +41,8 @@ function summarize(delta: any): string[] {
         typeof intent.confidence === "number"
           ? ` (confidence ${intent.confidence.toFixed(2)})`
           : "";
-      lines.push(`intent = ${intent.category}${conf}`);
+      const urg = intent.urgency ? ` [urgency ${intent.urgency}]` : "";
+      lines.push(`intent = ${intent.category}${conf}${urg}`);
     }
     if (intent.reason) lines.push(`reason: ${truncate(intent.reason)}`);
     if (typeof intent.isReliable === "boolean") {

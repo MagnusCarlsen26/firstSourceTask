@@ -20,6 +20,7 @@ export async function classifyNode(
     intent: {
       category: result.category,
       confidence: result.confidence,
+      urgency: result.urgency,
       reason: result.reason,
     },
   };
