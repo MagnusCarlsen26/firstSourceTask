@@ -6,6 +6,10 @@ gathers the facts it needs, decides what it is allowed to do, and either
 resolves the issue or hands it to a human — while streaming every decision it
 makes to a live dashboard so you can watch it think.
 
+## System design
+
+![System design](.docs/architecture.png)
+
 ## Setup
 
 Prerequisites: [Node.js](https://nodejs.org) 20 or newer, [pnpm](https://pnpm.io),
@@ -144,3 +148,21 @@ running trace of every decision — the label and confidence, the urgency, the
 eligibility verdict, which tool was called and whether it succeeded, and the
 message sent back. Run it with `pnpm web` inside `ai-server` and open
 `http://localhost:3000`.
+
+The four examples above map to the quick-start buttons in the chat:
+
+**Query**
+
+![Query example](.docs/screenshot-query.png)
+
+**Complaint**
+
+![Complaint example](.docs/screenshot-complaint.png)
+
+**Service request**
+
+![Service request example](.docs/screenshot-service-request.png)
+
+**Clarification**
+
+![Ambiguous example](.docs/screenshot-ambiguous.png)
