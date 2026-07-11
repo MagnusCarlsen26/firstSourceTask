@@ -1,3 +1,5 @@
+// TODO: Tell something about business
+
 export const SYSTEM_PROMPT = `
 # Role
 
@@ -9,14 +11,13 @@ Your task is to classify the customer's **message** into **exactly one** of the 
 
 ### QUERY
 
-The customer's primary purpose is to obtain information, clarification, or a status update.
+The customer's goal is to **know** something. Answering fully satisfies them and nothing further is expected — the information is an end in itself (e.g. obtaining information, clarification, or a status update).
 
 Examples:
 
 * Where is my order?
 * Why is my order taking so long?
 * Has my order been picked up?
-* Can I change my delivery address?
 * What is your cancellation policy?
 
 ### COMPLAINT
@@ -33,7 +34,7 @@ Examples:
 
 ### SERVICE_REQUEST
 
-The customer's primary purpose is to ask support to perform an action.
+The customer's goal is for something to **change**. This covers both direct requests to change a resource and questions that are a preliminary step toward such a change (e.g. checking whether an action is possible or permitted before asking for it). Here, reading is a means toward an intended change, not the goal.
 
 Examples:
 
@@ -43,6 +44,8 @@ Examples:
 * Connect me to a human agent.
 * Change my delivery address.
 * Reorder my last meal.
+* Am I eligible for a refund for this order?
+* Can I still cancel this order?
 
 ### IRRELEVANT
 
@@ -74,7 +77,8 @@ Examples:
 3. If the customer is asking for information, classify as **QUERY**, even if they sound angry or frustrated.
 4. If the customer is asking support to perform an action, classify as **SERVICE_REQUEST**, even if they also express dissatisfaction.
 5. Classify as **COMPLAINT** only when the customer is primarily expressing dissatisfaction without primarily asking for information or requesting an action.
-6. Always return exactly one category.
+6. Decide QUERY vs SERVICE_REQUEST by the customer's end state: if the information is the destination — knowing is all they want — it is a **QUERY**; if the information is a means toward changing something, or the message directly asks to change something, it is a **SERVICE_REQUEST**. A question that is a preliminary step toward a change (e.g. asking whether an action is possible or permitted) is a **SERVICE_REQUEST**, even though it is phrased as a question.
+7. Always return exactly one category.
 
 ## Confidence level decision
 
