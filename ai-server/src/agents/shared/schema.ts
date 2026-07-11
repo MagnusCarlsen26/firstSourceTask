@@ -1,8 +1,10 @@
 import { z } from "zod";
+import { withLangGraph } from "@langchain/langgraph/zod";
 
 import { MAX_USER_MESSAGE_LENGTH } from "@/config/config";
 import { ClassificationZod } from "@/agents/intentClassifierAgent/schema";
 import { UtilStateZod } from "@/agents/utilAgents/sendMessageToUser/schema";
+import { QueryStateZod, QueryState } from "@/agents/queryAgent/schema";
 
 const ChatHistoryZod = z.array(
   z.object({
@@ -25,6 +27,12 @@ export const MainStateZod = z.object({
   chatHistory: ChatHistoryZod,
   intent: IntentStateZod,
   util: UtilStateZod,
+  query: withLangGraph(QueryStateZod, {
+    reducer: {
+      fn: (a: QueryState, b: QueryState): QueryState => ({ ...a, ...b }),
+    },
+    default: (): QueryState => ({}),
+  }),
 });
 
 export type MainState = z.infer<typeof MainStateZod>;

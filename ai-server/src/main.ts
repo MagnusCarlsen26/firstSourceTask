@@ -24,7 +24,7 @@ async function main() {
 
   let result = (await mainGraph.invoke(
     {
-      chatHistory: [{ author: "user", message: "Am I elibigle for a refund for this order?" }],
+      chatHistory: [{ author: "user", message: "Do you deliver to my area?" }],
     },
     config,
   )) as InvokeResult;
@@ -44,6 +44,7 @@ async function main() {
   if (closing) console.log(`\nAssistant: ${closing}`);
 
   console.log("\nFinal intent:", result.intent);
+  console.log("query:", result.query);
   rl.close();
 }
 

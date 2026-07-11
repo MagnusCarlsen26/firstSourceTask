@@ -5,9 +5,9 @@ import { MAX_CLARIFICATION_ATTEMPTS } from "@/config/config";
 
 export function routeOnReliability(
   state: Pick<MainState, "intent">,
-): "clarify" | "exhausted" | typeof END {
+): "query" | "clarify" | "exhausted" | typeof END {
   if (state.intent.isReliable) {
-    return END;
+    return state.intent.category === "QUERY" ? "query" : END;
   }
 
   const clarificationAttempt = state.intent.clarificationAttempt ?? 0;
