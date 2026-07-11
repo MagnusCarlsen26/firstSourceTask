@@ -24,7 +24,7 @@ async function main() {
 
   let result = (await mainGraph.invoke(
     {
-      chatHistory: [{ author: "user", message: "Do you deliver to my area?" }],
+      chatHistory: [{ author: "user", message: "What is Swiggy One membership?" }],
     },
     config,
   )) as InvokeResult;
