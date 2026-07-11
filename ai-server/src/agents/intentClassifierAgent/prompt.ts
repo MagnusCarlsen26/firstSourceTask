@@ -22,7 +22,7 @@ Examples:
 
 ### COMPLAINT
 
-The customer's primary purpose is to express dissatisfaction, frustration, or disappointment. They are **not primarily asking for information or requesting support to perform an action**. If the customer expresses dissatisfaction but also asks for information, clarification, or a status update then classify it as **Query** because primary purpose is that.
+The customer expresses dissatisfaction, frustration, or disappointment about their experience — **with or without** also requesting an action to remedy it. Dissatisfaction is the defining signal: if it is present, the message is a COMPLAINT, even when the customer also asks you to fix, refund, replace, or compensate. (If the customer's primary purpose is instead to **obtain information** — a status update, an explanation — classify as **QUERY**, even when they sound upset.)
 
 Examples:
 
@@ -31,10 +31,12 @@ Examples:
 * The delivery was extremely late.
 * This is unacceptable.
 * I'm very disappointed.
+* The food was terrible, I want a refund.
+* My order is wrong, replace the missing item.
 
 ### SERVICE_REQUEST
 
-The customer's goal is for something to **change**. This covers both direct requests to change a resource and questions that are a preliminary step toward such a change (e.g. checking whether an action is possible or permitted before asking for it). Here, reading is a means toward an intended change, not the goal.
+The customer wants something to **change** and expresses **no dissatisfaction** — a neutral, transactional request. This covers both direct requests to change a resource and questions that are a preliminary step toward such a change (e.g. checking whether an action is possible or permitted before asking for it). If the same action request carries dissatisfaction, it is a **COMPLAINT** instead.
 
 Examples:
 
@@ -74,10 +76,10 @@ Examples:
 
 1. Classify based on the customer's **primary purpose**, not their tone or emotion.
 2. Ignore profanity, insults, capitalization, repeated punctuation, and emotional language when determining the category.
-3. If the customer is asking for information, classify as **QUERY**, even if they sound angry or frustrated.
-4. If the customer is asking support to perform an action, classify as **SERVICE_REQUEST**, even if they also express dissatisfaction.
-5. Classify as **COMPLAINT** only when the customer is primarily expressing dissatisfaction without primarily asking for information or requesting an action.
-6. Decide QUERY vs SERVICE_REQUEST by the customer's end state: if the information is the destination — knowing is all they want — it is a **QUERY**; if the information is a means toward changing something, or the message directly asks to change something, it is a **SERVICE_REQUEST**. A question that is a preliminary step toward a change (e.g. asking whether an action is possible or permitted) is a **SERVICE_REQUEST**, even though it is phrased as a question.
+3. If the customer's primary purpose is to obtain information, classify as **QUERY**, even if they sound angry or frustrated. Information-seeking outranks a complaint.
+4. If the customer expresses dissatisfaction, frustration, or disappointment **and is not primarily seeking information**, classify as **COMPLAINT** — even if they also request an action. Dissatisfaction is the deciding signal between COMPLAINT and SERVICE_REQUEST.
+5. Classify as **SERVICE_REQUEST** only when the customer wants an action performed (or asks whether one is possible or permitted) and expresses **no** dissatisfaction — a neutral, transactional request.
+6. When no dissatisfaction is present, decide QUERY vs SERVICE_REQUEST by the customer's end state: if the information is the destination — knowing is all they want — it is a **QUERY**; if the information is a means toward changing something, or the message directly asks to change something, it is a **SERVICE_REQUEST**. A question that is a preliminary step toward a change (e.g. asking whether an action is possible or permitted) is a **SERVICE_REQUEST**, even though it is phrased as a question.
 7. Always return exactly one category.
 
 ## Confidence level decision
@@ -105,8 +107,8 @@ The primary intent is still clear, but the message contains additional context o
 Examples:
 * **"Where is my order? Why is it taking so long?" → QUERY**
   * The customer is frustrated, but their primary goal is still to get an order update.
-* **"Cancel my order. This is taking forever." → SERVICE_REQUEST**
-  * The customer expresses dissatisfaction, but the main objective is to cancel the order.
+* **"Can you change my delivery address? I just moved." → SERVICE_REQUEST**
+  * The customer requests a neutral action with extra context but no dissatisfaction.
 * **"My food arrived cold. This is really disappointing." → COMPLAINT**
   * The customer elaborates on their dissatisfaction without requesting any action.
 
@@ -119,8 +121,8 @@ Examples:
   * The customer is both complaining and requesting an order update.
 * **"The food was cold. Can someone explain what happened?" → QUERY**
   * The customer expresses dissatisfaction while also seeking an explanation.
-* **"The order is wrong. I think I need a replacement." → SERVICE_REQUEST**
-  * The customer implies a replacement request, but the wording is indirect.
+* **"The order is wrong. I think I need a replacement." → COMPLAINT**
+  * The customer reports a problem (dissatisfaction) and asks for a remedy; dissatisfaction makes it a complaint rather than a neutral service request.
 * **"My order was cancelled again." → COMPLAINT**
   * The customer reports a negative experience, but it is unclear whether they are only complaining or expecting support to take action.
 
