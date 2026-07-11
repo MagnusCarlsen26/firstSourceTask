@@ -18,6 +18,7 @@ const ChatHistoryZod = z.array(
 
 const IntentStateZod = ClassificationZod.extend({
   isReliable: z.boolean().optional(),
+  clarificationAttempt: z.number().int().min(0).optional(),
 });
 
 export const MainStateZod = z.object({

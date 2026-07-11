@@ -1,8 +1,7 @@
 import { z } from "zod";
 
 export const UtilStateZod = z.object({
-  message: z.string(),
-  isSucess: z.boolean().optional(),
+  nextMessage: z.string(),
 });
 
 export type UtilState = z.infer<typeof UtilStateZod>;

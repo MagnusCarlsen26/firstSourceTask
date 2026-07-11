@@ -7,5 +7,9 @@ export function getLastUserMessage(chatHistory: ChatHistory): string {
     throw new Error("Received empty chat history");
   }
 
+  if (lastMessage.author === "system") {
+    throw new Error("Last message expected to be from user but its from system.")
+  }
+
   return lastMessage.message;
 }
