@@ -5,13 +5,21 @@ import { MAX_CLARIFICATION_ATTEMPTS } from "@/config/config";
 
 export function routeOnReliability(
   state: Pick<MainState, "intent">,
-): "query" | "complaint" | "clarify" | "exhausted" | typeof END {
+):
+  | "query"
+  | "complaint"
+  | "serviceRequest"
+  | "clarify"
+  | "exhausted"
+  | typeof END {
   if (state.intent.isReliable) {
     switch (state.intent.category) {
       case "QUERY":
         return "query";
       case "COMPLAINT":
         return "complaint";
+      case "SERVICE_REQUEST":
+        return "serviceRequest";
       default:
         return END;
     }

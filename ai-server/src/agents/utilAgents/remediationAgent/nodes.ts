@@ -9,9 +9,9 @@ const ERROR_MESSAGE =
   "human support agents is now reviewing it and will follow up with you shortly.";
 
 export async function runRemediation(
-  state: Pick<MainState, "complaint" | "util">,
+  state: Pick<MainState, "resolution" | "util">,
 ): Promise<Partial<MainState>> {
-  const verdict = state.complaint.validation?.verdict;
+  const verdict = state.resolution.validation?.verdict;
 
   const modelWithTools = openAIClient.bindTools(tools);
   const response = await modelWithTools.invoke([
@@ -45,8 +45,8 @@ export async function runRemediation(
     : ERROR_MESSAGE;
 
   return {
-    complaint: {
-      ...state.complaint,
+    resolution: {
+      ...state.resolution,
       remediation: { toolName: call?.name, succeeded },
     },
     util: { ...state.util, nextMessage: message },

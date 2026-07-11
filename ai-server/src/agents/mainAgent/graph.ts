@@ -7,6 +7,7 @@ import { awaitUserReply } from "./nodes/awaitUserReply.js";
 import { sendMessageGraph } from "../utilAgents/sendMessageToUser/graph.js";
 import { queryGraph } from "../queryAgent/graph.js";
 import { complaintGraph } from "../complaintAgent/graph.js";
+import { serviceRequestGraph } from "../serviceRequestAgent/graph.js";
 import { checkpointer } from "@/persistence/checkpointer";
 
 const builder = new StateGraph(MainStateZod)
@@ -18,12 +19,14 @@ const builder = new StateGraph(MainStateZod)
   .addNode("queryAgent", queryGraph)
   .addNode("sendQueryAnswer", sendMessageGraph)
   .addNode("complaintAgent", complaintGraph)
+  .addNode("serviceRequestAgent", serviceRequestGraph)
 
   .addEdge(START, "intentClassifier")
   .addEdge("intentClassifier", "isReliable")
   .addConditionalEdges("isReliable", routeOnReliability, {
     query: "queryAgent",
     complaint: "complaintAgent",
+    serviceRequest: "serviceRequestAgent",
     clarify: "sendClarification",
     exhausted: "sendFinal",
     [END]: END,
@@ -35,6 +38,7 @@ const builder = new StateGraph(MainStateZod)
   .addEdge("queryAgent", "sendQueryAnswer")
   .addEdge("sendQueryAnswer", END)
   .addEdge("complaintAgent", END)
+  .addEdge("serviceRequestAgent", END)
   .addEdge("sendFinal", END);
 
 export const mainGraph = builder.compile({ checkpointer });
