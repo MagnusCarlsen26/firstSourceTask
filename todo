@@ -4,6 +4,8 @@
 - [ ] Logging of AI calls including cost.
 - [ ] Make model section and tempature and other things configurable. 
 - [ ] Tests.
-- [ ] Stronger type definations.
+- [x] Stronger type definations.
 - [ ] Handle exceptions gracefully
-- [ ] Validate JSON responses from LLM
+- [x] Validate JSON responses from LLM
+- [ ] At the end keep taking input from user.
+- [ ] Give full context to to agents. currently only giving last message.

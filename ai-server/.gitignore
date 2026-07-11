@@ -4,3 +4,6 @@ dist
 
 # LangGraph SQLite checkpoints
 checkpoints.sqlite*
+
+# Generated FAQ vector index
+src/db/faqIndex

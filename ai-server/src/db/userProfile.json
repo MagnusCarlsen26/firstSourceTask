@@ -1,0 +1,42 @@
+{
+  "userId": "USR-100482",
+  "name": "Aarav Sharma",
+  "email": "aarav.sharma@example.com",
+  "phone": "+91-9876543210",
+  "swiggyOneMember": true,
+  "walletBalance": 245.5,
+  "defaultAddress": {
+    "label": "Home",
+    "line1": "Flat 402, Sunrise Residency",
+    "line2": "Koramangala 5th Block",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560095",
+    "latitude": 12.9352,
+    "longitude": 77.6245
+  },
+  "currentOrder": {
+    "orderId": "ORD-778812",
+    "status": "OUT_FOR_DELIVERY",
+    "placedAt": "2026-07-11T13:05:00+05:30",
+    "estimatedDeliveryAt": "2026-07-11T13:45:00+05:30",
+    "restaurant": {
+      "name": "Meghana Foods",
+      "area": "Koramangala",
+      "phone": "+91-8067001234"
+    },
+    "items": [
+      { "name": "Shahi Biryani", "quantity": 1, "price": 329 },
+      { "name": "Paneer Butter Masala", "quantity": 1, "price": 289 },
+      { "name": "Butter Naan", "quantity": 2, "price": 90 }
+    ],
+    "billTotal": 798,
+    "paymentMethod": "UPI",
+    "deliveryPartner": {
+      "name": "Mr. India",
+      "phone": "+91-9900112233",
+      "currentDistanceKm": 1.2
+    },
+    "refundEligible": false
+  }
+}

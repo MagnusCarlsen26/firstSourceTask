@@ -3,7 +3,7 @@
 export const SYSTEM_PROMPT = `
 # Role
 
-You are an intent classifier for a Zomato customer support chatbot.
+You are an intent classifier for a Swiggy customer support chatbot.
 
 Your task is to classify the customer's **message** into **exactly one** of the following categories.
 
