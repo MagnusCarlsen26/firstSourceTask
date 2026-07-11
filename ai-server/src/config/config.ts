@@ -25,6 +25,15 @@ export const COMPLAINT_HOLD_MESSAGE =
 export const COMPLAINT_CONFIRMATION_MESSAGE =
   "Would you like us to proceed with this resolution? Please reply with 'yes' to confirm, or 'no' to speak with a human agent.";
 
+// Sent by the service request agent before it runs the eligibility check.
+export const SERVICE_REQUEST_HOLD_MESSAGE =
+  "Thank you for reaching out. " +
+  "Please allow us a moment while we review the details of your order and check how we can help.";
+
+// Asks the customer to confirm the proposed resolution. Expects a yes / no reply.
+export const SERVICE_REQUEST_CONFIRMATION_MESSAGE =
+  "Would you like us to proceed with this resolution? Please reply with 'yes' to confirm, or 'no' to speak with a human agent.";
+
 // Probability that a mock tool call succeeds. Lower it to exercise the failure /
 // escalation path.
 export const TOOL_SUCCESS_RATE = 0.9;

@@ -6,9 +6,9 @@ import { ClassificationZod } from "@/agents/intentClassifierAgent/schema";
 import { UtilStateZod } from "@/agents/utilAgents/sendMessageToUser/schema";
 import { QueryStateZod, QueryState } from "@/agents/queryAgent/schema";
 import {
-  ComplaintStateZod,
-  ComplaintState,
-} from "@/agents/complaintAgent/schema";
+  ResolutionStateZod,
+  ResolutionState,
+} from "@/agents/shared/resolutionSchema";
 
 const ChatHistoryZod = z.array(
   z
@@ -47,14 +47,14 @@ export const MainStateZod = z.object({
     },
     default: (): QueryState => ({}),
   }),
-  complaint: withLangGraph(ComplaintStateZod, {
+  resolution: withLangGraph(ResolutionStateZod, {
     reducer: {
-      fn: (a: ComplaintState, b: ComplaintState): ComplaintState => ({
+      fn: (a: ResolutionState, b: ResolutionState): ResolutionState => ({
         ...a,
         ...b,
       }),
     },
-    default: (): ComplaintState => ({}),
+    default: (): ResolutionState => ({}),
   }),
 });
 
