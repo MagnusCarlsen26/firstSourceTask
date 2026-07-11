@@ -1,5 +1,5 @@
 import { openAIClient } from "@/llm/openai";
-import { getLastUserMessage } from "@/agents/intentClassifierAgent/utils/getLastUserMessage";
+import { findLastUserMessage } from "@/agents/intentClassifierAgent/utils/getLastUserMessage";
 import { ResourcePlanZod } from "@/agents/shared/resourceSchema";
 import { MainState } from "@/agents/shared/schema";
 import { SYSTEM_PROMPT } from "./prompt.js";
@@ -7,7 +7,7 @@ import { SYSTEM_PROMPT } from "./prompt.js";
 export async function planValidation(
   state: Pick<MainState, "chatHistory">,
 ): Promise<Partial<MainState>> {
-  const request = getLastUserMessage(state.chatHistory);
+  const request = findLastUserMessage(state.chatHistory);
 
   const structuredLlm = openAIClient.withStructuredOutput(ResourcePlanZod);
   const plan = await structuredLlm.invoke([

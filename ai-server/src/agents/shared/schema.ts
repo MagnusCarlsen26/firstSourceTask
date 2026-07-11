@@ -11,15 +11,25 @@ import {
 } from "@/agents/complaintAgent/schema";
 
 const ChatHistoryZod = z.array(
-  z.object({
-    author: z.enum(["user", "system"]),
-    message: z
-      .string()
-      .max(
-        MAX_USER_MESSAGE_LENGTH,
-        `Message must be less then ${MAX_USER_MESSAGE_LENGTH} characters`,
-      ),
-  }),
+  z
+    .object({
+      author: z.enum(["user", "system"]),
+      message: z.string(),
+    })
+    .superRefine((entry, ctx) => {
+      if (
+        entry.author === "user" &&
+        entry.message.length > MAX_USER_MESSAGE_LENGTH
+      ) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.too_big,
+          maximum: MAX_USER_MESSAGE_LENGTH,
+          type: "string",
+          inclusive: true,
+          message: `Message must be less then ${MAX_USER_MESSAGE_LENGTH} characters`,
+        });
+      }
+    }),
 );
 
 const IntentStateZod = ClassificationZod.extend({
