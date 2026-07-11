@@ -1,8 +1,10 @@
 import { MainState } from "../shared/schema.js";
+import { COMPLAINT_HOLD_MESSAGE } from "@/config/config";
 
-export async function handleComplaint(
-  state: Pick<MainState, "chatHistory" | "intent">,
+export async function prepareHold(
+  state: Pick<MainState, "util">,
 ): Promise<Partial<MainState>> {
-  // TODO: implement complaint handling.
-  return {};
+  return {
+    util: { ...state.util, nextMessage: COMPLAINT_HOLD_MESSAGE },
+  };
 }

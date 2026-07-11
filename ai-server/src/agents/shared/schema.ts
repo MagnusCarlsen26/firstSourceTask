@@ -5,6 +5,10 @@ import { MAX_USER_MESSAGE_LENGTH } from "@/config/config";
 import { ClassificationZod } from "@/agents/intentClassifierAgent/schema";
 import { UtilStateZod } from "@/agents/utilAgents/sendMessageToUser/schema";
 import { QueryStateZod, QueryState } from "@/agents/queryAgent/schema";
+import {
+  ComplaintStateZod,
+  ComplaintState,
+} from "@/agents/complaintAgent/schema";
 
 const ChatHistoryZod = z.array(
   z.object({
@@ -32,6 +36,15 @@ export const MainStateZod = z.object({
       fn: (a: QueryState, b: QueryState): QueryState => ({ ...a, ...b }),
     },
     default: (): QueryState => ({}),
+  }),
+  complaint: withLangGraph(ComplaintStateZod, {
+    reducer: {
+      fn: (a: ComplaintState, b: ComplaintState): ComplaintState => ({
+        ...a,
+        ...b,
+      }),
+    },
+    default: (): ComplaintState => ({}),
   }),
 });
 
