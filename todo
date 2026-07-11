@@ -5,8 +5,4 @@
 - [ ] Make model section and tempature and other things configurable. 
 - [ ] Tests.
 - [x] Stronger type definations.
-- [ ] Handle exceptions gracefully
 - [x] Validate JSON responses from LLM
-- [ ] At the end keep taking input from user.
-- [ ] Give full context to to agents. currently only giving last message.
-- [ ] Move all the message templates to a folder.
