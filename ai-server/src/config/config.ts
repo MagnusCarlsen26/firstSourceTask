@@ -1,5 +1,5 @@
 export const RELIABLE_CLASSIFICATION_THRESHOLD = 0.8;
-export const MAX_USER_MESSAGE_LENGTH = 100;
+export const MAX_USER_MESSAGE_LENGTH = 100_000;
 
 // How many times we ask the user to clarify before giving up.
 export const MAX_CLARIFICATION_ATTEMPTS = 3;
